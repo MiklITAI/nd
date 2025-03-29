@@ -6,14 +6,22 @@
   <style>
     body {
       margin: 0;
-      background: #000;
-      color: #fff;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
       font-size: 25vw;
       font-family: Arial, sans-serif;
+      color: white;
+      animation: bg-flash 2s infinite;
+    }
+
+    @keyframes bg-flash {
+      0% { background: #000; }
+      25% { background: red; }
+      50% { background: blue; }
+      75% { background: green; }
+      100% { background: #000; }
     }
   </style>
 </head>
